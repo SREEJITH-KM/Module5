@@ -1,19 +1,46 @@
-# # Constructors in Python: Welcome Message with Student Name
+# Exp.No:21  
+## Constructors - Parameterized Constructor
 
-## 🎯 Aim
-To write a Python program that creates a **Student** class with a **default constructor** and a method to display a welcome message along with the student’s name provided by the user.
+---
 
-## 🧠 Algorithm
-1. **Get user input**: Accept the student's name from the user.
-2. **Define the class**: Create a class `Student` with a default constructor (`__init__`).
-3. **Default Constructor**: In the constructor, assign the user input (student name) to an instance variable `self.a`.
-4. **Display Message**: Define a method `show` that prints "This is non-parameterized constructor" and a welcome message with the student’s name.
-5. **Execute the Program**: Instantiate the `Student` class and call the `show` method.
+### AIM  
+To write a Python code to create a class for a person with a parameterized constructor, which will take the `name` and `userid` of the person as parameters and print the `userid` of the person.
 
-## 🧾 Program
+---
 
-Add code here
+### ALGORITHM
 
-## Output
+1. Begin the program.  
+2. Define a `person` class.  
+3. The `person` class should have a parameterized `__init__` method that accepts two parameters: `name` and `userid`.  
+4. Inside the `__init__` method, assign the `name` to `self.name` and the `userid` to `self.userid`.  
+5. Print the `self.userid`.  
+6. Prompt the user to enter their `name` (string) and `userid`.  
+7. Create an instance `s1` of the `person` class by passing the entered `name` and `userid` to the constructor.  
+8. Terminate the program.
 
-## Result
+---
+
+### PROGRAM
+
+```
+reg no:212223070004
+name:dhushanth.km
+class Person:
+    def __init__(self, name, userid):
+        self.name = name
+        self.userid = userid
+
+    def print_userid(self):
+        print(f"User ID: {self.userid}")
+
+person1 = Person("Alice", "A123")
+person1.print_userid()
+
+```
+
+### OUTPUT
+![image](https://github.com/user-attachments/assets/632a9911-2185-46a7-8d67-1a8567e2aa29)
+
+### RESULT
+thus the program is executed successfully.
